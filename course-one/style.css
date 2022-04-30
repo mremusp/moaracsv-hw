@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+  background-color: #fdfdfd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh 5vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#card{
+  width:95%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #d1d1d1;
+}
+#card div:not(.card-image){
+  padding: 0.5rem 1rem;
+}
+.card-heading h1{
+  text-align: center;
+}
+.card-image img{
+  width: 100%;
+}
+.card-text{
+  text-align: justify;
+}
+.card-text sup{
+  line-height: 0;
+  font-size: 0.6rem;
+}
+.card-text .types{
+  padding-left: 1rem;
+}
+.card-text .types li{
+  padding-top: 0.3rem;
+}
+.card-text p, .card-text span, .card-text li{
+  font-size: 1.2rem;
+}
+#card .card-links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+.card-links a{
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  background: rgb(255,221,158);
+  background: linear-gradient(0deg, rgba(255,221,158,1) 0%, rgba(238,191,104,1) 100%);
+  font-weight: bold;
+  border-radius: 10px;
+  color: #000;
+  transition: all 0.2s ease-in-out;
+}
+.card-links a:hover{
+  box-shadow: 2px 2px 5px #d9c59f;
+  transform: translate(-2px,-2px);
+}
