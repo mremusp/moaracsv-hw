@@ -116,7 +116,7 @@ function whatSeasonIs(inputMonth) {
       console.log("Not a valid month")
   }
 
-  console.log("\nTask #4:\n" + inputMonth + " is in " + season)
+  console.log("\nTask #5:\n" + inputMonth + " is in " + season)
 }
 
 whatSeasonIs("May")
