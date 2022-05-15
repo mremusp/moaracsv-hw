@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: #fdfdfd;
+  padding: 5vh 5vw;
+  min-height: 100vh; 
+}
+.App {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.task {
+  position: relative;
+  margin: 30px 0;
+  width: 100%;
+  max-width: 800px;
+  padding: 15px;
+  /* border: 2px solid #cccc; */
+  background-color: #fdfdfd;
+  filter: drop-shadow(0px -2px #ccc) drop-shadow(2px 0 #ccc) drop-shadow(-2px 0 #ccc) drop-shadow(0 2px #ccc);
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+}
+.task--heading {
+  position: absolute;
+  top: -30px;
+  padding: 5px 20px;
+  background-color: #fdfdfd;
+  clip-path: polygon(10% 0, 0 100%, 100% 100%, 90% 0, 10% 0);
+}
+.products--head, .product {
+  display: flex;
+  flex-direction: row;
+}
+.products--head p, .product p {
+  flex: 1 1 0;
+  padding: 5px 10px;
+}
+.products--head p {
+  color: #999;
+}
+.product p {
+  color: #fff;
+  text-shadow: 0 0 3px #333;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.my-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.my-name--main {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+.my-name--main.colored {
+  color: #1d8f1d;
+}
+.gradient--picker input {
+  border: none;
+}
+.gradient--colors {
+  margin: 20px 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+.gradient--color {
+  display: flex;
+  align-items: center;
+  gap: 5px;    
+  padding: 5px;
+  border: 1px solid #d1d1d1;
+  border-radius: 3px;
+  cursor: default;
+}
+.gradient--color:hover {
+  box-shadow: 2px 2px 5px #d1d1d1;
+}
+.gradient--color-sample{
+  width: 50px;
+  height: 20px;
+}
+.gradient--color-remove:hover{
+  font-weight: bold;
+  cursor: pointer;
+}
+.gradient--banner {
+  width: 100%;
+  height: 100px;
+}
